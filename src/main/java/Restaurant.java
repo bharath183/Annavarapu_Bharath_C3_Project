@@ -68,5 +68,11 @@ public class Restaurant {
         return name;
     }
 
-
+    public int getSelectedItemPrice() {
+        int amount = 0;
+        for(Item item: menu) {
+            amount += item.getPrice();
+        }
+        return amount;
+    }
 }

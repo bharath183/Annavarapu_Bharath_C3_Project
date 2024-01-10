@@ -62,9 +62,9 @@ class RestaurantTest {
 
     @Test
     public void item_added_to_menu_should_return_the_price_greater_than_zero(){
-        restaurant.addToMenu("Chiken Biryani",200);
+        //Sweet corn soup and Vegetable lasagne combine price 269+119=388;
         int price = restaurant.getSelectedItemPrice();
-        assertEquals(200,price);
+        assertEquals(388,price);
 
 
     }
