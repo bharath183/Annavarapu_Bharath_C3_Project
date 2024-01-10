@@ -59,4 +59,13 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void item_added_to_menu_should_return_the_price_greater_than_zero(){
+        restaurant.addToMenu("Chiken Biryani",200);
+        int price = restaurant.getSelectedItemPrice();
+        assertEquals(200,price);
+
+
+    }
 }
